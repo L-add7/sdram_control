@@ -1,0 +1,67 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/xidian/project/sdram_control/sdram_control/lesson3
+T_opt
+!s110 1700797970
+VJjSd`QMiaaI^K2`f28mi`1
+04 10 4 work tb_uart_tx fast 0
+=1-581122cda100-65601e12-5dc18-8bc8
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.7c;67
+vtb_uart_tx
+Z2 DXx6 sv_std 3 std 0 22 d=_JfHTnXCN[H5FjiaJJc0
+Z3 !s110 1700797967
+!i10b 1
+!s100 2@i884ddLX`eg<93`=C1l0
+I?imfQ0zg@g80heK3b@IbG2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+!s105 tb_uart_tx_v_unit
+S1
+R0
+w1700797459
+8tb_uart_tx.v
+Ftb_uart_tx.v
+L0 1
+Z5 OL;L;10.7c;67
+r1
+!s85 0
+31
+Z6 !s108 1700797967.000000
+Z7 !s107 tb_uart_tx.v|uart_tx.v|
+Z8 !s90 -l|comp.log|-sv|uart_tx.v|tb_uart_tx.v|
+!i113 0
+Z9 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vuart_tx
+R2
+R3
+!i10b 1
+!s100 ]bBdG0X:9gYAZX64[YmVz1
+ILb@fU^B2HI2U2nF0CF8_z0
+R4
+!s105 uart_tx_v_unit
+S1
+R0
+w1700797959
+8uart_tx.v
+Fuart_tx.v
+L0 2
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
