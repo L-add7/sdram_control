@@ -38,7 +38,7 @@ end
 always @(posedge clk or posedge rst) begin
     if(rst)
         flag_200us <= 0;
-    else if ( wait_cnt == WAIT_CNT - 1)
+    else if ( wait_cnt == WAIT_CNT )
         flag_200us <= 1;
 end      
 
@@ -48,7 +48,7 @@ always @(posedge clk or posedge rst) begin
     if(rst)
         cnt_cmd <= 0;
     else if ( flag_init_end)
-        cnt_cmt <= cnt_cmd;
+        cnt_cmd <= cnt_cmd;
     else if (flag_200us)
         cnt_cmd <= cnt_cmd + 1;
 end
@@ -71,9 +71,9 @@ end
 always @(posedge clk or posedge rst) begin
     if(rst) 
         flag_init_end <= 0;
-    else if(cmd_reg == ModeSet)
+    else if(cnt_cmd == 9)
         flag_init_end <= 1;
 end
 
-assign sdram_addr = ( cnt_cmd == 9) ? ModeSdramAddr : 12'b010000000000;
+assign sdram_addr = ( cnt_cmd == 'd10) ? ModeSdramAddr : 12'b010000000000;
 endmodule

@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 module tb_sdram_top;
 reg clk;
 reg rst;
