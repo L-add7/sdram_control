@@ -46,4 +46,5 @@ module cmd_decode(
     assign rd_trig = (receive_num == 'd0 && uart_data == 8'haa) ? uart_flag : 0;
     assign wfifo_wr_en = (receive_num != 0) ? uart_flag : 0;
     assign wfifo_data = uart_data ; 
+    
 endmodule
